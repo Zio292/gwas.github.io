@@ -1,57 +1,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Testowa strona</title>
-<style>
-body{
-    margin: 0;
-    background:#333;
-    font-style:Verdana,Geneva,sans-serif,serif;
-    color:white;
-}
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  color:gray;
-}
-
-.header {
-    padding: 10px 0px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-.but{
-    height:50px;
-    width: 50px;
-    outline: none;
-    border:none;
-    background:#333;
-    color:white;
-    transition: 0.5s;
-}
-.but:hover{
-    background:white;
-    color:#333;
-}
-.but:active{
-    background:gray;
-    color:#333; 
-}
+<title>zio292.github.io</title>
+<link rel="stylesheet" href="style.css">
 </style>
 </head>
 <body>
@@ -63,9 +14,10 @@ body{
       <div class="header" id="myHeader">
         <h2>
             <center>
-            <button class="but">Home</button>
-            <button class="but">Posty</button>
-            <button class="but">Skrypty</button>
+            <button class="but" onclick="location.href ='index' ">Home</button>
+            <button class="but" onclick="location.href ='posts' ">Posty</button>
+            <button class="but" onclick="location.href ='scripts' ">Skrypty</button>
+            <button class="but" onclick="location.href ='credits' ">Credits</button>
             </center>
         </h2>
       </div>
@@ -73,18 +25,5 @@ body{
 <div class="content">
 XD
 </div>
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-    </script>
+<script src="scroll.js"></script>
 <html>

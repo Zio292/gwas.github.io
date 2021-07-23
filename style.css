@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background:#333;
+    font-style:Verdana,Geneva,sans-serif,serif;
+    color:white;
+}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  color:gray;
+}
+
+.header {
+    padding: 10px 0px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.but{
+    height:50px;
+    width: 50px;
+    outline: none;
+    border:none;
+    background:#333;
+    color:white;
+    transition: 0.5s;
+}
+.but:hover{
+    background:white;
+    color:#333;
+}
+.but:active{
+    background:gray;
+    color:#333; 
+}
