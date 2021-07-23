@@ -3,12 +3,18 @@ body{
     background:#333;
     font-style:Verdana,Geneva,sans-serif,serif;
     color:white;
+    counter-reset: section;
 }
 .top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
+  background-image:url("png/tlo.png");
+  background-color: #cccccc;
+  padding: 20%;
   text-align: center;
-  color:gray;
+  color:white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -20,7 +26,10 @@ body{
 .content {
   padding: 16px;
 }
-
+.post::before{
+    counter-increment: section;
+    content: "Post " counter(section) ": ";
+}
 .sticky {
   position: fixed;
   top: 0;
